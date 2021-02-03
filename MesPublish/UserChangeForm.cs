@@ -10,13 +10,16 @@ using System.Windows.Forms;
 
 namespace MesPublish
 {
-    public partial class UserForm : Form
+    public partial class UserChangeForm : Form
     {
-        private Action<UserModel> _action;
-        public UserForm(Action<UserModel> action)
+        public UserChangeForm(UserModel model,string ip)
         {
             InitializeComponent();
-            this._action = action;
+
+            txtUser.Text = model.Name;
+            txtPassWord.Text = model.PassWord;
+            txtDescription.Text = model.DisplayName;
+            _ip = ip;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -24,15 +27,14 @@ namespace MesPublish
             this.Close();
         }
 
+        private string _ip;
         private void button1_Click(object sender, EventArgs e)
         {
-            this._action(new UserModel()
+            if (UserCommons.ChangePassword(txtUser.Text,txtDescription.Text,txtPassWord.Text,_ip))
             {
-                Name = txtUser.Text,
-                DisplayName = txtDescription.Text
-                
-            });
-            this.Close();
+                MessageBox.Show("更改成功");
+                this.Close();
+            }
         }
     }
 }

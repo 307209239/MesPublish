@@ -30,8 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,25 +52,9 @@
             this.txtUser.Size = new System.Drawing.Size(154, 21);
             this.txtUser.TabIndex = 1;
             // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(59, 42);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(154, 21);
-            this.txtPassword.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "密码";
-            // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(59, 69);
+            this.txtDescription.Location = new System.Drawing.Point(59, 57);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(154, 21);
             this.txtDescription.TabIndex = 5;
@@ -80,7 +62,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 72);
+            this.label3.Location = new System.Drawing.Point(12, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 4;
@@ -115,13 +97,11 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label1);
             this.Name = "UserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UserForm";
+            this.Text = "添加账户";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,8 +111,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUser;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;

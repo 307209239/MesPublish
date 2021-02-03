@@ -42,6 +42,7 @@
             this.重启服务ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.重启服务器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button7 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -157,11 +158,22 @@
             this.重启服务器ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.重启服务器ToolStripMenuItem.Text = "重启服务器";
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(606, 2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "账户管理";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // ServiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1405, 668);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button6);
@@ -194,5 +206,6 @@
         private System.Windows.Forms.ToolStripMenuItem 重启服务ToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem 重启服务器ToolStripMenuItem;
+        private System.Windows.Forms.Button button7;
     }
 }

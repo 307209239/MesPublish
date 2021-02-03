@@ -14,6 +14,9 @@ namespace MesPublish
         [STAThread]
         static void Main()
         {
+            //UserCommons.UpdateGroupUsers(new List<string>() {"LA01", "LA02"},"Users","172.22.71.168");
+
+            //UserCommons.ChangePassword("LA01", "abc123...", "172.22.71.168");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ServiceForm());

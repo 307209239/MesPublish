@@ -395,25 +395,7 @@ namespace MesPublish
             new ServiceForm().Show();
         }
 
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-            DirectoryEntry localMachine = new DirectoryEntry("WinNT://" + Environment.MachineName + ",Computer");
-            var group = localMachine.Children.Find("Users", "group");
-            var user = localMachine.Children.Find("Administrator", "user");
-            localMachine.CommitChanges();
-            localMachine.Close();
-            new UserForm((u, p, d) =>
-            {
-                foreach (var ip in GetSelectNode())
-                {
-                    if (Users[ip]!=null)
-                    {
-                        var s=Users[ip].ViweUsers();
-                        Users[ip].AddUserByCmd(u, p, d);
-                    }
-                }
-            }).ShowDialog();
-        }
+       
     }
 
 
