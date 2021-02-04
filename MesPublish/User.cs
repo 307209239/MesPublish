@@ -276,7 +276,7 @@ namespace MesPublish
             GroupPrincipal qbeGroup = CreateGroup(groupName, false, ip);
             foreach (Principal user in qbeGroup.Members)
             {
-                if (user.Name == usersName.Name)
+                if (user?.Name == usersName.Name)
                 {
                     return new Result()
                     {
